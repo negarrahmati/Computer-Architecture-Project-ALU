@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="ALU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|mul:inst2|lpm_mux2:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_mux0:inst1|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_nnc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_mux3:inst4|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|lpm_mux4:inst5|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|ALU|mul:inst2|lpm_mux2:inst3|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

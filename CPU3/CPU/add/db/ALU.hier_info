@@ -1,0 +1,544 @@
+|ALU
+res[0] <= CLA:inst.Result[0]
+res[1] <= CLA:inst.Result[1]
+res[2] <= CLA:inst.Result[2]
+res[3] <= CLA:inst.Result[3]
+res[4] <= CLA:inst.Result[4]
+res[5] <= CLA:inst.Result[5]
+res[6] <= CLA:inst.Result[6]
+res[7] <= CLA:inst.Result[7]
+res[8] <= CLA:inst.Result[8]
+res[9] <= CLA:inst.Result[9]
+res[10] <= CLA:inst.Result[10]
+res[11] <= CLA:inst.Result[11]
+res[12] <= CLA:inst.Result[12]
+res[13] <= CLA:inst.Result[13]
+res[14] <= CLA:inst.Result[14]
+res[15] <= CLA:inst.Result[15]
+res[16] <= CLA:inst.Result[16]
+res[17] <= CLA:inst.Result[17]
+res[18] <= CLA:inst.Result[18]
+res[19] <= CLA:inst.Result[19]
+res[20] <= CLA:inst.Result[20]
+res[21] <= CLA:inst.Result[21]
+res[22] <= CLA:inst.Result[22]
+res[23] <= CLA:inst.Result[23]
+res[24] <= CLA:inst.Result[24]
+res[25] <= CLA:inst.Result[25]
+res[26] <= CLA:inst.Result[26]
+res[27] <= CLA:inst.Result[27]
+res[28] <= CLA:inst.Result[28]
+res[29] <= CLA:inst.Result[29]
+res[30] <= CLA:inst.Result[30]
+res[31] <= CLA:inst.Result[31]
+Func[0] => lpm_mux0:inst1.data0
+Func[1] => lpm_mux0:inst1.data1
+Func[2] => ~NO_FANOUT~
+select => lpm_mux0:inst1.sel
+input1[0] => CLA:inst.a[0]
+input1[1] => CLA:inst.a[1]
+input1[2] => CLA:inst.a[2]
+input1[3] => CLA:inst.a[3]
+input1[4] => CLA:inst.a[4]
+input1[5] => CLA:inst.a[5]
+input1[6] => CLA:inst.a[6]
+input1[7] => CLA:inst.a[7]
+input1[8] => CLA:inst.a[8]
+input1[9] => CLA:inst.a[9]
+input1[10] => CLA:inst.a[10]
+input1[11] => CLA:inst.a[11]
+input1[12] => CLA:inst.a[12]
+input1[13] => CLA:inst.a[13]
+input1[14] => CLA:inst.a[14]
+input1[15] => CLA:inst.a[15]
+input1[16] => CLA:inst.a[16]
+input1[17] => CLA:inst.a[17]
+input1[18] => CLA:inst.a[18]
+input1[19] => CLA:inst.a[19]
+input1[20] => CLA:inst.a[20]
+input1[21] => CLA:inst.a[21]
+input1[22] => CLA:inst.a[22]
+input1[23] => CLA:inst.a[23]
+input1[24] => CLA:inst.a[24]
+input1[25] => CLA:inst.a[25]
+input1[26] => CLA:inst.a[26]
+input1[27] => CLA:inst.a[27]
+input1[28] => CLA:inst.a[28]
+input1[29] => CLA:inst.a[29]
+input1[30] => CLA:inst.a[30]
+input1[31] => CLA:inst.a[31]
+input2[0] => CLA:inst.b[0]
+input2[1] => CLA:inst.b[1]
+input2[2] => CLA:inst.b[2]
+input2[3] => CLA:inst.b[3]
+input2[4] => CLA:inst.b[4]
+input2[5] => CLA:inst.b[5]
+input2[6] => CLA:inst.b[6]
+input2[7] => CLA:inst.b[7]
+input2[8] => CLA:inst.b[8]
+input2[9] => CLA:inst.b[9]
+input2[10] => CLA:inst.b[10]
+input2[11] => CLA:inst.b[11]
+input2[12] => CLA:inst.b[12]
+input2[13] => CLA:inst.b[13]
+input2[14] => CLA:inst.b[14]
+input2[15] => CLA:inst.b[15]
+input2[16] => CLA:inst.b[16]
+input2[17] => CLA:inst.b[17]
+input2[18] => CLA:inst.b[18]
+input2[19] => CLA:inst.b[19]
+input2[20] => CLA:inst.b[20]
+input2[21] => CLA:inst.b[21]
+input2[22] => CLA:inst.b[22]
+input2[23] => CLA:inst.b[23]
+input2[24] => CLA:inst.b[24]
+input2[25] => CLA:inst.b[25]
+input2[26] => CLA:inst.b[26]
+input2[27] => CLA:inst.b[27]
+input2[28] => CLA:inst.b[28]
+input2[29] => CLA:inst.b[29]
+input2[30] => CLA:inst.b[30]
+input2[31] => CLA:inst.b[31]
+
+
+|ALU|CLA:inst
+Result[0] <= FullAdder:inst168.ans
+Result[1] <= FullAdder:inst169.ans
+Result[2] <= FullAdder:inst170.ans
+Result[3] <= FullAdder:inst171.ans
+Result[4] <= FullAdder:inst172.ans
+Result[5] <= FullAdder:inst173.ans
+Result[6] <= FullAdder:inst174.ans
+Result[7] <= FullAdder:inst175.ans
+Result[8] <= FullAdder:inst192.ans
+Result[9] <= FullAdder:inst193.ans
+Result[10] <= FullAdder:inst189.ans
+Result[11] <= FullAdder:inst190.ans
+Result[12] <= FullAdder:inst188.ans
+Result[13] <= FullAdder:inst191.ans
+Result[14] <= FullAdder:inst186.ans
+Result[15] <= FullAdder:inst187.ans
+Result[16] <= FullAdder:inst194.ans
+Result[17] <= FullAdder:inst195.ans
+Result[18] <= FullAdder:inst196.ans
+Result[19] <= FullAdder:inst197.ans
+Result[20] <= FullAdder:inst198.ans
+Result[21] <= FullAdder:inst199.ans
+Result[22] <= FullAdder:inst200.ans
+Result[23] <= FullAdder:inst201.ans
+Result[24] <= FullAdder:inst202.ans
+Result[25] <= FullAdder:inst203.ans
+Result[26] <= FullAdder:inst204.ans
+Result[27] <= FullAdder:inst205.ans
+Result[28] <= FullAdder:inst206.ans
+Result[29] <= FullAdder:inst207.ans
+Result[30] <= FullAdder:inst208.ans
+Result[31] <= FullAdder:inst209.ans
+a[0] => FullAdder:inst168.a
+a[0] => inst1.IN0
+a[0] => inst.IN0
+a[1] => FullAdder:inst169.a
+a[1] => inst5.IN0
+a[1] => inst4.IN0
+a[2] => inst41.IN0
+a[2] => inst8.IN0
+a[2] => FullAdder:inst170.a
+a[3] => FullAdder:inst171.a
+a[3] => inst45.IN0
+a[3] => inst44.IN0
+a[4] => FullAdder:inst172.a
+a[4] => inst49.IN0
+a[4] => inst48.IN0
+a[5] => FullAdder:inst173.a
+a[5] => inst53.IN0
+a[5] => inst52.IN0
+a[6] => FullAdder:inst174.a
+a[6] => inst57.IN0
+a[6] => inst56.IN0
+a[7] => FullAdder:inst175.a
+a[7] => inst61.IN0
+a[7] => inst60.IN0
+a[8] => FullAdder:inst192.a
+a[8] => inst65.IN0
+a[8] => inst64.IN0
+a[9] => FullAdder:inst193.a
+a[9] => inst69.IN0
+a[9] => inst68.IN0
+a[10] => FullAdder:inst189.a
+a[10] => inst73.IN0
+a[10] => inst72.IN0
+a[11] => FullAdder:inst190.a
+a[11] => inst77.IN0
+a[11] => inst76.IN0
+a[12] => FullAdder:inst188.a
+a[12] => inst81.IN0
+a[12] => inst80.IN0
+a[13] => FullAdder:inst191.a
+a[13] => inst85.IN0
+a[13] => inst84.IN0
+a[14] => FullAdder:inst186.a
+a[14] => inst89.IN0
+a[14] => inst88.IN0
+a[15] => FullAdder:inst187.a
+a[15] => inst93.IN0
+a[15] => inst92.IN0
+a[16] => FullAdder:inst194.a
+a[16] => inst97.IN0
+a[16] => inst96.IN0
+a[17] => FullAdder:inst195.a
+a[17] => inst101.IN0
+a[17] => inst100.IN0
+a[18] => FullAdder:inst196.a
+a[18] => inst105.IN0
+a[18] => inst104.IN0
+a[19] => FullAdder:inst197.a
+a[19] => inst109.IN0
+a[19] => inst108.IN0
+a[20] => FullAdder:inst198.a
+a[20] => inst113.IN0
+a[20] => inst112.IN0
+a[21] => FullAdder:inst199.a
+a[21] => inst117.IN0
+a[21] => inst116.IN0
+a[22] => FullAdder:inst200.a
+a[22] => inst121.IN0
+a[22] => inst120.IN0
+a[23] => FullAdder:inst201.a
+a[23] => inst125.IN0
+a[23] => inst124.IN0
+a[24] => FullAdder:inst202.a
+a[24] => inst129.IN0
+a[24] => inst128.IN0
+a[25] => FullAdder:inst203.a
+a[25] => inst133.IN0
+a[25] => inst132.IN0
+a[26] => FullAdder:inst204.a
+a[26] => inst137.IN0
+a[26] => inst136.IN0
+a[27] => FullAdder:inst205.a
+a[27] => inst141.IN0
+a[27] => inst140.IN0
+a[28] => FullAdder:inst206.a
+a[28] => inst145.IN0
+a[28] => inst144.IN0
+a[29] => FullAdder:inst207.a
+a[29] => inst149.IN0
+a[29] => inst148.IN0
+a[30] => FullAdder:inst208.a
+a[30] => inst153.IN0
+a[30] => inst152.IN0
+a[31] => FullAdder:inst209.a
+b[0] => inst16.IN0
+b[1] => inst9.IN0
+b[2] => inst10.IN0
+b[3] => inst11.IN0
+b[4] => inst12.IN0
+b[5] => inst13.IN0
+b[6] => inst14.IN0
+b[7] => inst15.IN0
+b[8] => inst24.IN0
+b[9] => inst17.IN0
+b[10] => inst18.IN0
+b[11] => inst19.IN0
+b[12] => inst20.IN0
+b[13] => inst21.IN0
+b[14] => inst22.IN0
+b[15] => inst23.IN0
+b[16] => inst32.IN0
+b[17] => inst25.IN0
+b[18] => inst26.IN0
+b[19] => inst27.IN0
+b[20] => inst28.IN0
+b[21] => inst29.IN0
+b[22] => inst30.IN0
+b[23] => ~NO_FANOUT~
+b[24] => inst31.IN0
+b[24] => inst40.IN0
+b[25] => inst33.IN0
+b[26] => inst34.IN0
+b[27] => inst35.IN0
+b[28] => inst36.IN0
+b[29] => inst37.IN0
+b[30] => inst38.IN0
+b[31] => inst39.IN0
+sel => inst16.IN1
+sel => FullAdder:inst168.c
+sel => inst9.IN1
+sel => inst2.IN1
+sel => inst11.IN1
+sel => inst10.IN1
+sel => inst12.IN1
+sel => inst13.IN1
+sel => inst14.IN1
+sel => inst15.IN1
+sel => inst24.IN1
+sel => inst17.IN1
+sel => inst18.IN1
+sel => inst19.IN1
+sel => inst20.IN1
+sel => inst21.IN1
+sel => inst22.IN1
+sel => inst23.IN1
+sel => inst32.IN1
+sel => inst25.IN1
+sel => inst26.IN1
+sel => inst27.IN1
+sel => inst28.IN1
+sel => inst29.IN1
+sel => inst30.IN1
+sel => inst31.IN1
+sel => inst40.IN1
+sel => inst33.IN1
+sel => inst34.IN1
+sel => inst35.IN1
+sel => inst36.IN1
+sel => inst37.IN1
+sel => inst38.IN1
+sel => inst39.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst168
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst169
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst171
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst170
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst172
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst173
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst174
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst175
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst192
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst193
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst189
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst190
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst188
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst191
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst186
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst187
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst194
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst195
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst196
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst197
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst198
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst199
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst200
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst201
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst202
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst203
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst204
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst205
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst206
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst207
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst208
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|CLA:inst|FullAdder:inst209
+ans <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+b => inst.IN1
+c => inst4.IN1
+
+
+|ALU|lpm_mux0:inst1
+data0 => lpm_mux:lpm_mux_component.data[0][0]
+data1 => lpm_mux:lpm_mux_component.data[1][0]
+sel => lpm_mux:lpm_mux_component.sel[0]
+result <= lpm_mux:lpm_mux_component.result[0]
+
+
+|ALU|lpm_mux0:inst1|lpm_mux:lpm_mux_component
+data[0][0] => mux_nnc:auto_generated.data[0]
+data[1][0] => mux_nnc:auto_generated.data[1]
+sel[0] => mux_nnc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_nnc:auto_generated.result[0]
+
+
+|ALU|lpm_mux0:inst1|lpm_mux:lpm_mux_component|mux_nnc:auto_generated
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+
+

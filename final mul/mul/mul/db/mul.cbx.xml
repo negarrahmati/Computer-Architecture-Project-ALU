@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="mul">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mul|lpm_mux2:inst3|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|mul|lpm_mux2:inst|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_bpc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

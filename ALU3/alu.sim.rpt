@@ -1,0 +1,608 @@
+Simulator report for alu
+Fri Jul 01 21:55:35 2011
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 321 nodes    ;
+; Simulation Coverage         ;      49.84 % ;
+; Total Number of Transitions ; 1267         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; alu3.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      49.84 % ;
+; Total nodes checked                                 ; 321          ;
+; Total output ports checked                          ; 321          ;
+; Total output ports with complete 1/0-value coverage ; 160          ;
+; Total output ports with no 1/0-value coverage       ; 122          ;
+; Total output ports with no 1-value coverage         ; 124          ;
+; Total output ports with no 0-value coverage         ; 159          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                        ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                      ; Output Port Name                                                                                               ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[31]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[31]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[30]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[30]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[29]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[29]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[28]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[28]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[27]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[27]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[26]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[26]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[25]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[25]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[24]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[24]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[23]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[23]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[22]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[22]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[21]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[21]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[20]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[20]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[19]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[19]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[18]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[18]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[17]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[17]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[16]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[16]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[15]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[15]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[14]                                                            ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[14]                                                            ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]                                                             ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]                                                             ; regout           ;
+; |alu|lpm_dff1:inst15|lpm_ff:lpm_ff_component|dffs[0]                                                           ; |alu|lpm_dff1:inst15|lpm_ff:lpm_ff_component|dffs[0]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[12]                                                          ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[12]                                                          ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[11]                                                          ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[11]                                                          ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[10]                                                          ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[10]                                                          ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[9]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[9]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[8]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[8]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[7]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[7]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[6]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[6]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[5]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[5]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[4]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[4]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[3]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[3]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[2]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[2]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[1]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[1]                                                           ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[0]                                                           ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[0]                                                           ; regout           ;
+; |alu|lpm_mux1:inst9|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout~1                    ; |alu|lpm_mux1:inst9|lpm_mux:lpm_mux_component|mux_nnc:auto_generated|l1_w0_n0_mux_dataout~1                    ; combout          ;
+; |alu|inst13                                                                                                    ; |alu|inst13                                                                                                    ; combout          ;
+; |alu|lpm_mux0:inst5|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w0_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst5|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w0_n0_mux_dataout~2                    ; combout          ;
+; |alu|inst11                                                                                                    ; |alu|inst11                                                                                                    ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst8|1BitAdder:inst|inst~0                 ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst8|1BitAdder:inst|inst~0                 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w30_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w30_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w28_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w28_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w27_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w27_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w26_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w26_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w25_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w25_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w24_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w24_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w23_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w23_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w22_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w22_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w21_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w21_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w20_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w20_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w19_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w19_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w18_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w18_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w17_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w17_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w16_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w16_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w15_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w15_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w14_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w14_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w13_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w13_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w12_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w12_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w11_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w11_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w10_n0_mux_dataout~2 ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w10_n0_mux_dataout~2 ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w9_n0_mux_dataout~2  ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w9_n0_mux_dataout~2  ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w8_n0_mux_dataout~2  ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w8_n0_mux_dataout~2  ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w7_n0_mux_dataout~2  ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w7_n0_mux_dataout~2  ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w6_n0_mux_dataout~2  ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w6_n0_mux_dataout~2  ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w5_n0_mux_dataout~2  ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w5_n0_mux_dataout~2  ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w4_n0_mux_dataout~2  ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w4_n0_mux_dataout~2  ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w3_n0_mux_dataout~2  ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w3_n0_mux_dataout~2  ; combout          ;
+; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w2_n0_mux_dataout~2  ; |alu|32BitAddSub:inst16|lpm_mux0:inst|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w2_n0_mux_dataout~2  ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst5|1BitAdder:inst|2-1Mux:inst2|5~0        ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst5|1BitAdder:inst|2-1Mux:inst2|5~0        ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst6|1BitAdder:inst|2-1Mux:inst2|5~0        ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst6|1BitAdder:inst|2-1Mux:inst2|5~0        ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~0        ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~0        ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst8|1BitAdder:inst|2-1Mux:inst2|5~0        ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst8|1BitAdder:inst|2-1Mux:inst2|5~0        ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst5|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst5|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst6|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst6|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst8|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst8|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst5|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst5|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst6|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst6|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst7|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst7|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst8|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst8|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst5|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst5|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst6|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst6|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst7|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst7|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w31_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w31_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w29_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w29_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w28_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w28_n0_mux_dataout~2                   ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst6|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst6|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w27_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w27_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w26_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w26_n0_mux_dataout~2                   ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst5|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst5|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w25_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w25_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w24_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w24_n0_mux_dataout~2                   ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst8|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst8|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w23_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w23_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w22_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w22_n0_mux_dataout~2                   ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w21_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w21_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w20_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w20_n0_mux_dataout~2                   ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst6|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst6|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w19_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w19_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w18_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w18_n0_mux_dataout~2                   ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst5|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst2|2BitAdder:inst5|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w17_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w17_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w16_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w16_n0_mux_dataout~2                   ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst8|1BitAdder:inst|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst8|1BitAdder:inst|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w15_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w15_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w14_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w14_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w12_n0_mux_dataout~1                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w12_n0_mux_dataout~1                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w11_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w11_n0_mux_dataout~2                   ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst6|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst6|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w10_n0_mux_dataout~2                   ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w10_n0_mux_dataout~2                   ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w9_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w9_n0_mux_dataout~2                    ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst5|1BitAdder:inst2|2-1Mux:inst2|5~0      ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst1|2BitAdder:inst5|1BitAdder:inst2|2-1Mux:inst2|5~0      ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w8_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w8_n0_mux_dataout~2                    ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w7_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w7_n0_mux_dataout~2                    ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst8|1BitAdder:inst2|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst8|1BitAdder:inst2|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w6_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w6_n0_mux_dataout~2                    ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w5_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w5_n0_mux_dataout~2                    ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst7|1BitAdder:inst2|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst7|1BitAdder:inst2|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w4_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w4_n0_mux_dataout~2                    ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w3_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w3_n0_mux_dataout~2                    ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst6|1BitAdder:inst2|2-1Mux:inst2|5~0       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst|2BitAdder:inst6|1BitAdder:inst2|2-1Mux:inst2|5~0       ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w2_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w2_n0_mux_dataout~2                    ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w1_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w1_n0_mux_dataout~2                    ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w0_n0_mux_dataout~2                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w0_n0_mux_dataout~2                    ; combout          ;
+; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w0_n0_mux_dataout~3                    ; |alu|lpm_mux0:inst6|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w0_n0_mux_dataout~3                    ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~1       ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~1       ; combout          ;
+; |alu|s0                                                                                                        ; |alu|s0                                                                                                        ; padio            ;
+; |alu|output[31]                                                                                                ; |alu|output[31]                                                                                                ; padio            ;
+; |alu|output[30]                                                                                                ; |alu|output[30]                                                                                                ; padio            ;
+; |alu|output[29]                                                                                                ; |alu|output[29]                                                                                                ; padio            ;
+; |alu|output[28]                                                                                                ; |alu|output[28]                                                                                                ; padio            ;
+; |alu|output[27]                                                                                                ; |alu|output[27]                                                                                                ; padio            ;
+; |alu|output[26]                                                                                                ; |alu|output[26]                                                                                                ; padio            ;
+; |alu|output[25]                                                                                                ; |alu|output[25]                                                                                                ; padio            ;
+; |alu|output[24]                                                                                                ; |alu|output[24]                                                                                                ; padio            ;
+; |alu|output[23]                                                                                                ; |alu|output[23]                                                                                                ; padio            ;
+; |alu|output[22]                                                                                                ; |alu|output[22]                                                                                                ; padio            ;
+; |alu|output[21]                                                                                                ; |alu|output[21]                                                                                                ; padio            ;
+; |alu|output[20]                                                                                                ; |alu|output[20]                                                                                                ; padio            ;
+; |alu|output[19]                                                                                                ; |alu|output[19]                                                                                                ; padio            ;
+; |alu|output[18]                                                                                                ; |alu|output[18]                                                                                                ; padio            ;
+; |alu|output[17]                                                                                                ; |alu|output[17]                                                                                                ; padio            ;
+; |alu|output[16]                                                                                                ; |alu|output[16]                                                                                                ; padio            ;
+; |alu|output[15]                                                                                                ; |alu|output[15]                                                                                                ; padio            ;
+; |alu|output[14]                                                                                                ; |alu|output[14]                                                                                                ; padio            ;
+; |alu|output[0]                                                                                                 ; |alu|output[0]                                                                                                 ; padio            ;
+; |alu|A[12]                                                                                                     ; |alu|A[12]                                                                                                     ; padio            ;
+; |alu|A[11]                                                                                                     ; |alu|A[11]                                                                                                     ; padio            ;
+; |alu|A[10]                                                                                                     ; |alu|A[10]                                                                                                     ; padio            ;
+; |alu|A[9]                                                                                                      ; |alu|A[9]                                                                                                      ; padio            ;
+; |alu|A[8]                                                                                                      ; |alu|A[8]                                                                                                      ; padio            ;
+; |alu|A[7]                                                                                                      ; |alu|A[7]                                                                                                      ; padio            ;
+; |alu|A[6]                                                                                                      ; |alu|A[6]                                                                                                      ; padio            ;
+; |alu|A[5]                                                                                                      ; |alu|A[5]                                                                                                      ; padio            ;
+; |alu|A[4]                                                                                                      ; |alu|A[4]                                                                                                      ; padio            ;
+; |alu|A[3]                                                                                                      ; |alu|A[3]                                                                                                      ; padio            ;
+; |alu|A[2]                                                                                                      ; |alu|A[2]                                                                                                      ; padio            ;
+; |alu|A[1]                                                                                                      ; |alu|A[1]                                                                                                      ; padio            ;
+; |alu|A[0]                                                                                                      ; |alu|A[0]                                                                                                      ; padio            ;
+; |alu|clk                                                                                                       ; |alu|clk~corein                                                                                                ; combout          ;
+; |alu|clk~clkctrl                                                                                               ; |alu|clk~clkctrl                                                                                               ; outclk           ;
++----------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                               ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                         ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[12]                                                      ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[12]                                                      ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[11]                                                      ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[11]                                                      ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[10]                                                      ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[10]                                                      ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[4]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[4]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[3]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[3]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[2]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[2]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[1]                                                       ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[1]                                                       ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[13]                                                      ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[13]                                                      ; regout           ;
+; |alu|lpm_mux0:inst8|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w13_n0_mux_dataout~0             ; |alu|lpm_mux0:inst8|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w13_n0_mux_dataout~0             ; combout          ;
+; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~2 ; |alu|32BitAddSub:inst16|32BitAdder:inst2|8BitAdder:inst3|2BitAdder:inst7|1BitAdder:inst|2-1Mux:inst2|5~2 ; combout          ;
+; |alu|output[13]                                                                                          ; |alu|output[13]                                                                                          ; padio            ;
+; |alu|output[12]                                                                                          ; |alu|output[12]                                                                                          ; padio            ;
+; |alu|output[11]                                                                                          ; |alu|output[11]                                                                                          ; padio            ;
+; |alu|output[10]                                                                                          ; |alu|output[10]                                                                                          ; padio            ;
+; |alu|output[9]                                                                                           ; |alu|output[9]                                                                                           ; padio            ;
+; |alu|output[8]                                                                                           ; |alu|output[8]                                                                                           ; padio            ;
+; |alu|output[7]                                                                                           ; |alu|output[7]                                                                                           ; padio            ;
+; |alu|output[6]                                                                                           ; |alu|output[6]                                                                                           ; padio            ;
+; |alu|output[5]                                                                                           ; |alu|output[5]                                                                                           ; padio            ;
+; |alu|output[4]                                                                                           ; |alu|output[4]                                                                                           ; padio            ;
+; |alu|output[3]                                                                                           ; |alu|output[3]                                                                                           ; padio            ;
+; |alu|output[2]                                                                                           ; |alu|output[2]                                                                                           ; padio            ;
+; |alu|output[1]                                                                                           ; |alu|output[1]                                                                                           ; padio            ;
+; |alu|A[13]                                                                                               ; |alu|A[13]                                                                                               ; padio            ;
+; |alu|start                                                                                               ; |alu|start~corein                                                                                        ; combout          ;
+; |alu|input2[0]                                                                                           ; |alu|input2[0]~corein                                                                                    ; combout          ;
+; |alu|input1[31]                                                                                          ; |alu|input1[31]~corein                                                                                   ; combout          ;
+; |alu|input1[30]                                                                                          ; |alu|input1[30]~corein                                                                                   ; combout          ;
+; |alu|input1[29]                                                                                          ; |alu|input1[29]~corein                                                                                   ; combout          ;
+; |alu|input1[28]                                                                                          ; |alu|input1[28]~corein                                                                                   ; combout          ;
+; |alu|input1[27]                                                                                          ; |alu|input1[27]~corein                                                                                   ; combout          ;
+; |alu|input1[26]                                                                                          ; |alu|input1[26]~corein                                                                                   ; combout          ;
+; |alu|input1[25]                                                                                          ; |alu|input1[25]~corein                                                                                   ; combout          ;
+; |alu|input1[24]                                                                                          ; |alu|input1[24]~corein                                                                                   ; combout          ;
+; |alu|input1[23]                                                                                          ; |alu|input1[23]~corein                                                                                   ; combout          ;
+; |alu|input1[22]                                                                                          ; |alu|input1[22]~corein                                                                                   ; combout          ;
+; |alu|input1[21]                                                                                          ; |alu|input1[21]~corein                                                                                   ; combout          ;
+; |alu|input1[20]                                                                                          ; |alu|input1[20]~corein                                                                                   ; combout          ;
+; |alu|input1[19]                                                                                          ; |alu|input1[19]~corein                                                                                   ; combout          ;
+; |alu|input1[18]                                                                                          ; |alu|input1[18]~corein                                                                                   ; combout          ;
+; |alu|input1[17]                                                                                          ; |alu|input1[17]~corein                                                                                   ; combout          ;
+; |alu|input1[16]                                                                                          ; |alu|input1[16]~corein                                                                                   ; combout          ;
+; |alu|input1[15]                                                                                          ; |alu|input1[15]~corein                                                                                   ; combout          ;
+; |alu|input1[14]                                                                                          ; |alu|input1[14]~corein                                                                                   ; combout          ;
+; |alu|input1[13]                                                                                          ; |alu|input1[13]~corein                                                                                   ; combout          ;
+; |alu|input1[12]                                                                                          ; |alu|input1[12]~corein                                                                                   ; combout          ;
+; |alu|input1[11]                                                                                          ; |alu|input1[11]~corein                                                                                   ; combout          ;
+; |alu|input1[10]                                                                                          ; |alu|input1[10]~corein                                                                                   ; combout          ;
+; |alu|input1[9]                                                                                           ; |alu|input1[9]~corein                                                                                    ; combout          ;
+; |alu|input1[8]                                                                                           ; |alu|input1[8]~corein                                                                                    ; combout          ;
+; |alu|input1[7]                                                                                           ; |alu|input1[7]~corein                                                                                    ; combout          ;
+; |alu|input1[6]                                                                                           ; |alu|input1[6]~corein                                                                                    ; combout          ;
+; |alu|input1[5]                                                                                           ; |alu|input1[5]~corein                                                                                    ; combout          ;
+; |alu|input1[4]                                                                                           ; |alu|input1[4]~corein                                                                                    ; combout          ;
+; |alu|input1[3]                                                                                           ; |alu|input1[3]~corein                                                                                    ; combout          ;
+; |alu|input1[2]                                                                                           ; |alu|input1[2]~corein                                                                                    ; combout          ;
+; |alu|input1[1]                                                                                           ; |alu|input1[1]~corein                                                                                    ; combout          ;
+; |alu|input1[0]                                                                                           ; |alu|input1[0]~corein                                                                                    ; combout          ;
+; |alu|input2[31]                                                                                          ; |alu|input2[31]~corein                                                                                   ; combout          ;
+; |alu|input2[30]                                                                                          ; |alu|input2[30]~corein                                                                                   ; combout          ;
+; |alu|input2[29]                                                                                          ; |alu|input2[29]~corein                                                                                   ; combout          ;
+; |alu|input2[28]                                                                                          ; |alu|input2[28]~corein                                                                                   ; combout          ;
+; |alu|input2[27]                                                                                          ; |alu|input2[27]~corein                                                                                   ; combout          ;
+; |alu|input2[26]                                                                                          ; |alu|input2[26]~corein                                                                                   ; combout          ;
+; |alu|input2[25]                                                                                          ; |alu|input2[25]~corein                                                                                   ; combout          ;
+; |alu|input2[24]                                                                                          ; |alu|input2[24]~corein                                                                                   ; combout          ;
+; |alu|input2[23]                                                                                          ; |alu|input2[23]~corein                                                                                   ; combout          ;
+; |alu|input2[22]                                                                                          ; |alu|input2[22]~corein                                                                                   ; combout          ;
+; |alu|input2[21]                                                                                          ; |alu|input2[21]~corein                                                                                   ; combout          ;
+; |alu|input2[20]                                                                                          ; |alu|input2[20]~corein                                                                                   ; combout          ;
+; |alu|input2[19]                                                                                          ; |alu|input2[19]~corein                                                                                   ; combout          ;
+; |alu|input2[18]                                                                                          ; |alu|input2[18]~corein                                                                                   ; combout          ;
+; |alu|input2[17]                                                                                          ; |alu|input2[17]~corein                                                                                   ; combout          ;
+; |alu|input2[16]                                                                                          ; |alu|input2[16]~corein                                                                                   ; combout          ;
+; |alu|input2[15]                                                                                          ; |alu|input2[15]~corein                                                                                   ; combout          ;
+; |alu|input2[14]                                                                                          ; |alu|input2[14]~corein                                                                                   ; combout          ;
+; |alu|input2[13]                                                                                          ; |alu|input2[13]~corein                                                                                   ; combout          ;
+; |alu|input2[12]                                                                                          ; |alu|input2[12]~corein                                                                                   ; combout          ;
+; |alu|input2[11]                                                                                          ; |alu|input2[11]~corein                                                                                   ; combout          ;
+; |alu|input2[10]                                                                                          ; |alu|input2[10]~corein                                                                                   ; combout          ;
+; |alu|input2[9]                                                                                           ; |alu|input2[9]~corein                                                                                    ; combout          ;
+; |alu|input2[8]                                                                                           ; |alu|input2[8]~corein                                                                                    ; combout          ;
+; |alu|input2[7]                                                                                           ; |alu|input2[7]~corein                                                                                    ; combout          ;
+; |alu|input2[6]                                                                                           ; |alu|input2[6]~corein                                                                                    ; combout          ;
+; |alu|input2[5]                                                                                           ; |alu|input2[5]~corein                                                                                    ; combout          ;
+; |alu|input2[4]                                                                                           ; |alu|input2[4]~corein                                                                                    ; combout          ;
+; |alu|input2[3]                                                                                           ; |alu|input2[3]~corein                                                                                    ; combout          ;
+; |alu|input2[2]                                                                                           ; |alu|input2[2]~corein                                                                                    ; combout          ;
+; |alu|input2[1]                                                                                           ; |alu|input2[1]~corein                                                                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[30]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[30]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[29]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[29]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[28]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[28]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[27]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[27]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[26]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[26]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[25]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[25]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[24]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[24]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[23]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[23]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[22]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[22]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[21]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[21]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[20]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[20]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[19]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[19]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[18]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[18]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[17]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[17]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[16]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[16]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[15]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[15]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[14]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[14]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[12]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[12]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[11]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[11]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[10]~feeder                                               ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[10]~feeder                                               ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[4]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[4]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[3]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[3]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[2]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[2]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[1]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[1]~feeder                                                ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]~feeder                                                ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]~feeder                                                ; combout          ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                       ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                    ; Output Port Name                                                                             ; Output Port Type ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[12]                                          ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[12]                                          ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[11]                                          ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[11]                                          ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[10]                                          ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[10]                                          ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[4]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[4]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[3]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[3]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[2]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[2]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[1]                                           ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[1]                                           ; regout           ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[13]                                          ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[13]                                          ; regout           ;
+; |alu|lpm_dff1:inst17|lpm_ff:lpm_ff_component|dffs[0]                                         ; |alu|lpm_dff1:inst17|lpm_ff:lpm_ff_component|dffs[0]                                         ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[31]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[31]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[29]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[29]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[28]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[28]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[27]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[27]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[26]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[26]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[25]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[25]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[24]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[24]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[23]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[23]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[22]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[22]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[21]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[21]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[20]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[20]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[19]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[19]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[18]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[18]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[17]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[17]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[16]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[16]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[15]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[15]                                        ; regout           ;
+; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[14]                                        ; |alu|lpm_dff0:inst14|lpm_ff:lpm_ff_component|dffs[14]                                        ; regout           ;
+; |alu|lpm_mux0:inst8|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w13_n0_mux_dataout~0 ; |alu|lpm_mux0:inst8|lpm_mux:lpm_mux_component|mux_bpc:auto_generated|l1_w13_n0_mux_dataout~0 ; combout          ;
+; |alu|output[13]                                                                              ; |alu|output[13]                                                                              ; padio            ;
+; |alu|output[12]                                                                              ; |alu|output[12]                                                                              ; padio            ;
+; |alu|output[11]                                                                              ; |alu|output[11]                                                                              ; padio            ;
+; |alu|output[10]                                                                              ; |alu|output[10]                                                                              ; padio            ;
+; |alu|output[9]                                                                               ; |alu|output[9]                                                                               ; padio            ;
+; |alu|output[8]                                                                               ; |alu|output[8]                                                                               ; padio            ;
+; |alu|output[7]                                                                               ; |alu|output[7]                                                                               ; padio            ;
+; |alu|output[6]                                                                               ; |alu|output[6]                                                                               ; padio            ;
+; |alu|output[5]                                                                               ; |alu|output[5]                                                                               ; padio            ;
+; |alu|output[4]                                                                               ; |alu|output[4]                                                                               ; padio            ;
+; |alu|output[3]                                                                               ; |alu|output[3]                                                                               ; padio            ;
+; |alu|output[2]                                                                               ; |alu|output[2]                                                                               ; padio            ;
+; |alu|output[1]                                                                               ; |alu|output[1]                                                                               ; padio            ;
+; |alu|s1                                                                                      ; |alu|s1                                                                                      ; padio            ;
+; |alu|A[31]                                                                                   ; |alu|A[31]                                                                                   ; padio            ;
+; |alu|A[30]                                                                                   ; |alu|A[30]                                                                                   ; padio            ;
+; |alu|A[29]                                                                                   ; |alu|A[29]                                                                                   ; padio            ;
+; |alu|A[28]                                                                                   ; |alu|A[28]                                                                                   ; padio            ;
+; |alu|A[27]                                                                                   ; |alu|A[27]                                                                                   ; padio            ;
+; |alu|A[26]                                                                                   ; |alu|A[26]                                                                                   ; padio            ;
+; |alu|A[25]                                                                                   ; |alu|A[25]                                                                                   ; padio            ;
+; |alu|A[24]                                                                                   ; |alu|A[24]                                                                                   ; padio            ;
+; |alu|A[23]                                                                                   ; |alu|A[23]                                                                                   ; padio            ;
+; |alu|A[22]                                                                                   ; |alu|A[22]                                                                                   ; padio            ;
+; |alu|A[21]                                                                                   ; |alu|A[21]                                                                                   ; padio            ;
+; |alu|A[20]                                                                                   ; |alu|A[20]                                                                                   ; padio            ;
+; |alu|A[19]                                                                                   ; |alu|A[19]                                                                                   ; padio            ;
+; |alu|A[18]                                                                                   ; |alu|A[18]                                                                                   ; padio            ;
+; |alu|A[17]                                                                                   ; |alu|A[17]                                                                                   ; padio            ;
+; |alu|A[16]                                                                                   ; |alu|A[16]                                                                                   ; padio            ;
+; |alu|A[15]                                                                                   ; |alu|A[15]                                                                                   ; padio            ;
+; |alu|A[14]                                                                                   ; |alu|A[14]                                                                                   ; padio            ;
+; |alu|A[13]                                                                                   ; |alu|A[13]                                                                                   ; padio            ;
+; |alu|input2[0]                                                                               ; |alu|input2[0]~corein                                                                        ; combout          ;
+; |alu|input1[31]                                                                              ; |alu|input1[31]~corein                                                                       ; combout          ;
+; |alu|input1[30]                                                                              ; |alu|input1[30]~corein                                                                       ; combout          ;
+; |alu|input1[29]                                                                              ; |alu|input1[29]~corein                                                                       ; combout          ;
+; |alu|input1[28]                                                                              ; |alu|input1[28]~corein                                                                       ; combout          ;
+; |alu|input1[27]                                                                              ; |alu|input1[27]~corein                                                                       ; combout          ;
+; |alu|input1[26]                                                                              ; |alu|input1[26]~corein                                                                       ; combout          ;
+; |alu|input1[25]                                                                              ; |alu|input1[25]~corein                                                                       ; combout          ;
+; |alu|input1[24]                                                                              ; |alu|input1[24]~corein                                                                       ; combout          ;
+; |alu|input1[23]                                                                              ; |alu|input1[23]~corein                                                                       ; combout          ;
+; |alu|input1[22]                                                                              ; |alu|input1[22]~corein                                                                       ; combout          ;
+; |alu|input1[21]                                                                              ; |alu|input1[21]~corein                                                                       ; combout          ;
+; |alu|input1[20]                                                                              ; |alu|input1[20]~corein                                                                       ; combout          ;
+; |alu|input1[19]                                                                              ; |alu|input1[19]~corein                                                                       ; combout          ;
+; |alu|input1[18]                                                                              ; |alu|input1[18]~corein                                                                       ; combout          ;
+; |alu|input1[17]                                                                              ; |alu|input1[17]~corein                                                                       ; combout          ;
+; |alu|input1[16]                                                                              ; |alu|input1[16]~corein                                                                       ; combout          ;
+; |alu|input1[15]                                                                              ; |alu|input1[15]~corein                                                                       ; combout          ;
+; |alu|input1[14]                                                                              ; |alu|input1[14]~corein                                                                       ; combout          ;
+; |alu|input1[13]                                                                              ; |alu|input1[13]~corein                                                                       ; combout          ;
+; |alu|input1[12]                                                                              ; |alu|input1[12]~corein                                                                       ; combout          ;
+; |alu|input1[11]                                                                              ; |alu|input1[11]~corein                                                                       ; combout          ;
+; |alu|input1[10]                                                                              ; |alu|input1[10]~corein                                                                       ; combout          ;
+; |alu|input1[9]                                                                               ; |alu|input1[9]~corein                                                                        ; combout          ;
+; |alu|input1[8]                                                                               ; |alu|input1[8]~corein                                                                        ; combout          ;
+; |alu|input1[7]                                                                               ; |alu|input1[7]~corein                                                                        ; combout          ;
+; |alu|input1[6]                                                                               ; |alu|input1[6]~corein                                                                        ; combout          ;
+; |alu|input1[5]                                                                               ; |alu|input1[5]~corein                                                                        ; combout          ;
+; |alu|input1[4]                                                                               ; |alu|input1[4]~corein                                                                        ; combout          ;
+; |alu|input1[3]                                                                               ; |alu|input1[3]~corein                                                                        ; combout          ;
+; |alu|input1[2]                                                                               ; |alu|input1[2]~corein                                                                        ; combout          ;
+; |alu|input1[1]                                                                               ; |alu|input1[1]~corein                                                                        ; combout          ;
+; |alu|input1[0]                                                                               ; |alu|input1[0]~corein                                                                        ; combout          ;
+; |alu|input2[31]                                                                              ; |alu|input2[31]~corein                                                                       ; combout          ;
+; |alu|input2[30]                                                                              ; |alu|input2[30]~corein                                                                       ; combout          ;
+; |alu|input2[29]                                                                              ; |alu|input2[29]~corein                                                                       ; combout          ;
+; |alu|input2[28]                                                                              ; |alu|input2[28]~corein                                                                       ; combout          ;
+; |alu|input2[27]                                                                              ; |alu|input2[27]~corein                                                                       ; combout          ;
+; |alu|input2[26]                                                                              ; |alu|input2[26]~corein                                                                       ; combout          ;
+; |alu|input2[25]                                                                              ; |alu|input2[25]~corein                                                                       ; combout          ;
+; |alu|input2[24]                                                                              ; |alu|input2[24]~corein                                                                       ; combout          ;
+; |alu|input2[23]                                                                              ; |alu|input2[23]~corein                                                                       ; combout          ;
+; |alu|input2[22]                                                                              ; |alu|input2[22]~corein                                                                       ; combout          ;
+; |alu|input2[21]                                                                              ; |alu|input2[21]~corein                                                                       ; combout          ;
+; |alu|input2[20]                                                                              ; |alu|input2[20]~corein                                                                       ; combout          ;
+; |alu|input2[19]                                                                              ; |alu|input2[19]~corein                                                                       ; combout          ;
+; |alu|input2[18]                                                                              ; |alu|input2[18]~corein                                                                       ; combout          ;
+; |alu|input2[17]                                                                              ; |alu|input2[17]~corein                                                                       ; combout          ;
+; |alu|input2[16]                                                                              ; |alu|input2[16]~corein                                                                       ; combout          ;
+; |alu|input2[15]                                                                              ; |alu|input2[15]~corein                                                                       ; combout          ;
+; |alu|input2[14]                                                                              ; |alu|input2[14]~corein                                                                       ; combout          ;
+; |alu|input2[13]                                                                              ; |alu|input2[13]~corein                                                                       ; combout          ;
+; |alu|input2[12]                                                                              ; |alu|input2[12]~corein                                                                       ; combout          ;
+; |alu|input2[11]                                                                              ; |alu|input2[11]~corein                                                                       ; combout          ;
+; |alu|input2[10]                                                                              ; |alu|input2[10]~corein                                                                       ; combout          ;
+; |alu|input2[9]                                                                               ; |alu|input2[9]~corein                                                                        ; combout          ;
+; |alu|input2[8]                                                                               ; |alu|input2[8]~corein                                                                        ; combout          ;
+; |alu|input2[7]                                                                               ; |alu|input2[7]~corein                                                                        ; combout          ;
+; |alu|input2[6]                                                                               ; |alu|input2[6]~corein                                                                        ; combout          ;
+; |alu|input2[5]                                                                               ; |alu|input2[5]~corein                                                                        ; combout          ;
+; |alu|input2[4]                                                                               ; |alu|input2[4]~corein                                                                        ; combout          ;
+; |alu|input2[3]                                                                               ; |alu|input2[3]~corein                                                                        ; combout          ;
+; |alu|input2[2]                                                                               ; |alu|input2[2]~corein                                                                        ; combout          ;
+; |alu|input2[1]                                                                               ; |alu|input2[1]~corein                                                                        ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[30]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[30]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[29]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[29]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[28]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[28]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[27]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[27]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[26]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[26]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[25]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[25]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[24]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[24]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[23]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[23]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[22]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[22]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[21]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[21]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[20]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[20]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[19]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[19]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[18]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[18]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[17]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[17]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[16]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[16]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[15]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[15]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[14]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[14]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[12]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[12]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[11]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[11]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[10]~feeder                                   ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[10]~feeder                                   ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[9]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[8]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[7]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[6]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[5]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[4]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[4]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[3]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[3]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[2]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[2]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[1]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[1]~feeder                                    ; combout          ;
+; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]~feeder                                    ; |alu|lpm_dff0:inst|lpm_ff:lpm_ff_component|dffs[0]~feeder                                    ; combout          ;
++----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
+    Info: Processing started: Fri Jul 01 21:55:33 2011
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off alu -c alu
+Info: Using vector source file "C:/Users/negar/Desktop/project/ALU3/alu3.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of alu3.vwf called alu.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      49.84 %
+Info: Number of transitions in simulation is 1267
+Info: Vector file alu3.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 162 megabytes
+    Info: Processing ended: Fri Jul 01 21:55:35 2011
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

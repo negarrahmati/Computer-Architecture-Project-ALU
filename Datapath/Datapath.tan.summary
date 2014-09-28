@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.436 ns
+From           : DCache2:inst7|mem[23][3]
+To             : DCacheO5[27]
+From Clock     : Clock
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Clock'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 72.88 MHz ( period = 13.722 ns )
+From           : lpm_dff5:inst1|lpm_ff:lpm_ff_component|dffs[0]
+To             : RegisterFile_32word:inst3|32reg:inst|16reg:inst|4reg:inst|lpm_dff3:inst8|lpm_ff:lpm_ff_component|dffs[16]
+From Clock     : Clock
+To Clock       : Clock
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+
